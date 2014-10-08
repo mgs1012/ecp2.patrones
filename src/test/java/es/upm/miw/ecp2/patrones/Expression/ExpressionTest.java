@@ -1,6 +1,5 @@
 package es.upm.miw.ecp2.patrones.Expression;
 
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
