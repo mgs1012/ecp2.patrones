@@ -1,5 +1,5 @@
 package es.upm.miw.ecp2.patrones.Connection;
 
-public class Esperando {
+public class Esperando extends StateConnection{
 
 }
