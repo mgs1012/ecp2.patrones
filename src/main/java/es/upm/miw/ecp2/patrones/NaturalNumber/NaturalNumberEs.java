@@ -1,33 +1,15 @@
 package es.upm.miw.ecp2.patrones.NaturalNumber;
 
-public class NaturalNumberEs {
-    private int value;
+public class NaturalNumberEs extends NaturalNumber {
 
-    private static final String[] textValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
+	private int value;
 
-    public NaturalNumberEs(int value) {
-        this.setValue(value);
-    }
+	private static final String[] textValue = { "cero", "uno", "dos", "tres",
+			"cuatro", "cinco" };
 
-    public int getValue() {
-        return value;
-    }
+	public NaturalNumberEs(int value) {
+		super(value, NaturalNumberEs.textValue);
+	}
 
-    public void setValue(int value) {
-        assert value >= 0;
-        this.value = value;
-    }
-
-    public void add(int value) {
-        this.setValue(this.value + value);
-    }
-
-    public String getTextValue() {
-        if (this.value < textValue.length) {
-            return NaturalNumberEs.textValue[this.value];
-        } else {
-            return "???";
-        }
-    }
 
 }
