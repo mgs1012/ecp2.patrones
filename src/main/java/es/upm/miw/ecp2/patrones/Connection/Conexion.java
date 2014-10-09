@@ -19,9 +19,8 @@ public class Conexion {
     	this.estado = estado;
     }
     
-    
-    public StateConnection getEstado() {
-        return this.estado;
+    public Estado getEstado() {
+        return this.estado.getEstado();
     }
 
     public void abrir() {
@@ -34,12 +33,13 @@ public class Conexion {
             throw new UnsupportedOperationException("Acción no permitida... ");
         } else
             assert false : "estado imposible";*/
-    	this.estado.abrir(this.estado);
+    	this.estado.abrir(this);
         
     }
 
     public void cerrar() {
         /*if (this.estado == Estado.CERRADO) {
+         * 
         } else if (this.estado == Estado.PARADO) {
             throw new UnsupportedOperationException("Acción no permitida... ");
         } else if (this.estado == Estado.PREPARADO) {
@@ -48,7 +48,7 @@ public class Conexion {
             throw new UnsupportedOperationException("Acción no permitida... ");
         }
         assert false : "estado imposible";*/
-    	this.estado.cerrar(this.estado);
+    	this.estado.cerrar(this);
     }
 
     public void parar() {
@@ -61,7 +61,7 @@ public class Conexion {
             throw new UnsupportedOperationException("Acción no permitida... ");
         }
         assert false : "estado imposible";*/
-    	this.estado.parar(this.estado);
+    	this.estado.parar(this);
     }
 
     public void iniciar() {
@@ -75,7 +75,7 @@ public class Conexion {
         }
         assert false : "estado imposible";^*/
     	
-    	this.estado.iniciar(this.estado);
+    	this.estado.iniciar(this);
     }
 
     public void enviar(String msg) {
@@ -90,7 +90,7 @@ public class Conexion {
             throw new UnsupportedOperationException("Acción no permitida... ");
         }
         assert false : "estado imposible"; */
-    	this.estado.enviar(this.estado);
+    	this.estado.enviar(this, msg);
     }
 
     public void recibir(int respuesta) {
@@ -109,7 +109,7 @@ public class Conexion {
         }
         assert false : "estado imposible";*/
     	
-    	this.estado.recibir(this.estado);
+    	this.estado.recibir(this, respuesta);
     }
 
 }
