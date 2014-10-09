@@ -1,6 +1,6 @@
 package es.upm.miw.ecp2.patrones.Connection;
 
-import es.upm.miw.pd.state.connection.Link;
+import es.upm.miw.ecp2.patrones.Connection.*;
 
 public final class LinkMock implements Link {
     private String msg;
@@ -15,12 +15,10 @@ public final class LinkMock implements Link {
         return respuesta;
     }
 
-    @Override
     public void enviar(String msg) {
         this.msg = msg;
     }
 
-    @Override
     public void recibir(int respuesta) {
         this.respuesta = respuesta;
     }
