@@ -1,7 +1,5 @@
 package es.upm.miw.ecp2.patrones.Expression;
 
-import java.util.List;
-
 public abstract class ExpresionCompuesta extends Expresion {
 	
 	protected Expresion operando1;
@@ -12,10 +10,7 @@ public abstract class ExpresionCompuesta extends Expresion {
 		this.operando2 = exp2;
 	}
 
-	public int operar(){
-		return 0;
-		
-	}
+	public abstract int operar();
 	
 	public String toString(){
 		return null;
