@@ -10,7 +10,9 @@ public abstract class ExpresionCompuesta extends Expresion {
 		this.operando2 = exp2;
 	}
 
-	public abstract int operar();
+	public int operar(){
+		return 0;
+	}
 	
 	public String toString(){
 		return null;
