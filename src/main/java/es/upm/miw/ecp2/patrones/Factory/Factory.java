@@ -33,5 +33,4 @@ public class Factory {
 	public void removeReference(String key) {
 		this.references.remove(key);
 	}
-
 }
