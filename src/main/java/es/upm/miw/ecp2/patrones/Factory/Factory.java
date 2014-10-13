@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Factory {
-	
+	//Método static para creacón de una instancia única.
 	private static Factory factory = new Factory();
 
 	private Map<String, Integer> references;

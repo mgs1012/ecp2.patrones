@@ -7,7 +7,7 @@ import static org.junit.Assert.assertSame;
 import org.junit.Test;
 
 public class FactoryTest {
-
+	
     @Test
     public void testFactoryReferencesIsSingleton() {
         assertSame(Factory.getFactory(), Factory.getFactory());
