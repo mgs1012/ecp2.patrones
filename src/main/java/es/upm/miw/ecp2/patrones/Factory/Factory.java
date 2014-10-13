@@ -16,7 +16,7 @@ public class Factory {
 		this.reference = 0;
 	}
 	
-	public static Factory getFactory(){
+	public static Factory getInstance(){
 		return Factory.factory;
 	}
 
