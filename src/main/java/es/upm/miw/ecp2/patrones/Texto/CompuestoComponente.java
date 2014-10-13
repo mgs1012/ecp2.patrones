@@ -40,4 +40,5 @@ public abstract class CompuestoComponente extends Componente {
 
 	public abstract String dibujarS();
 
+	
 }
