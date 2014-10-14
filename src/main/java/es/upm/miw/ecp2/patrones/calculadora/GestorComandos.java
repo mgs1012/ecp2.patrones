@@ -19,10 +19,5 @@ public class GestorComandos {
 	        return this.comandos.keySet().toArray(new String[0]);
 	    }
 
-		public void add(Comando comando) {
-			// TODO Auto-generated method stub
-			
-		}
-
 
 }

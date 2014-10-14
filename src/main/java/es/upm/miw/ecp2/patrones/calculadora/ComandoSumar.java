@@ -1,9 +1,24 @@
 package es.upm.miw.ecp2.patrones.calculadora;
 
-public class ComandoSumar {
+import upm.jbb.IO;
+
+public class ComandoSumar extends Comando {
+	
+	private Calculadora calculadora;
 
 	public ComandoSumar(Calculadora calc) {
-		// TODO Auto-generated constructor stub
+		this.calculadora = calc;
+	}
+
+	@Override
+	public String name() {
+		return "Sumar";
+	}
+
+	@Override
+	public void execute() {
+		int valor = IO.in.readInt();;
+		this.calculadora.sumar(valor );
 	}
 
 }

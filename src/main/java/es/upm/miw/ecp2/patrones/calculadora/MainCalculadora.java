@@ -13,6 +13,7 @@ public class MainCalculadora {
 	        this.gestor.add(new ComandoRestar(calc));
 	        this.gestor.add(new ComandoIniciar(calc));
 	        this.gestor.add(new ComandoImprimir(calc));
+	        this.gestor.add(new ComandoDeshacer(calc));
 	    }
 
 	    public void ejecutar() {

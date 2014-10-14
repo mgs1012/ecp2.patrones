@@ -1,9 +1,24 @@
 package es.upm.miw.ecp2.patrones.calculadora;
 
-public class ComandoImprimir {
+import upm.jbb.IO;
+
+public class ComandoImprimir extends Comando{
+
+	private Calculadora calculadora;
 
 	public ComandoImprimir(Calculadora calc) {
-		// TODO Auto-generated constructor stub
+		this.calculadora = calc;
+	}
+
+	@Override
+	public String name() {
+		return "Imprimir";
+	}
+
+	@Override
+	public void execute() {
+		IO.out.println(this.calculadora.getTotal());
+		
 	}
 
 }
