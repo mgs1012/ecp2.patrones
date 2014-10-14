@@ -7,7 +7,7 @@ public class MainCalculadora {
 	 private GestorComandos gestor;
 
 	    public MainCalculadora() {
-	        Calculadora calc = new Calculadora();
+	        Calculadora calc = new CalculadoraMementable();
 	        this.gestor = new GestorComandos();
 	        this.gestor.add(new ComandoSumar(calc));
 	        this.gestor.add(new ComandoRestar(calc));

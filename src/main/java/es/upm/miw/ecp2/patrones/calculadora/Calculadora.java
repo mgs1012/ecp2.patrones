@@ -10,6 +10,8 @@ public class Calculadora {
 	        this.iniciar();
 	    }
 
+	    
+	    
 	    public int getTotal() {
 	        return total;
 	    }
@@ -35,4 +37,11 @@ public class Calculadora {
 	    public void deshacer(){
 	    	this.setTotal(vAnterior);
 	    }
+
+
+
+		public MementoCalculadora guardar() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 }

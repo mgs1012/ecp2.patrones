@@ -2,10 +2,12 @@ package es.upm.miw.ecp2.patrones.calculadora;
 
 public class ComandoIniciar extends Comando{
 	
-	private Calculadora calculadora;
-
 	public ComandoIniciar(Calculadora calc) {
 		this.calculadora = calc;
+	}
+	
+	public ComandoIniciar(CalculadoraMementable calcm) {
+		this.calculadora = calcm;
 	}
 
 	@Override

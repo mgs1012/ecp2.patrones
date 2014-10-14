@@ -3,11 +3,13 @@ package es.upm.miw.ecp2.patrones.calculadora;
 import upm.jbb.IO;
 
 public class ComandoSumar extends Comando {
-	
-	private Calculadora calculadora;
 
 	public ComandoSumar(Calculadora calc) {
 		this.calculadora = calc;
+	}
+
+	public ComandoSumar(CalculadoraMementable calcm) {
+		this.calculadora = calcm;
 	}
 
 	@Override
@@ -17,8 +19,9 @@ public class ComandoSumar extends Comando {
 
 	@Override
 	public void execute() {
-		int valor = IO.in.readInt();;
-		this.calculadora.sumar(valor );
+		int valor = IO.in.readInt();
+		;
+		this.calculadora.sumar(valor);
 	}
 
 }
