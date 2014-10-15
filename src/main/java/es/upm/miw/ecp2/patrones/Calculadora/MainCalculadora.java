@@ -1,7 +1,5 @@
 package es.upm.miw.ecp2.patrones.Calculadora;
 
-import es.upm.miw.ecp2.patrones.Memento.CalculadoraMementable;
-import es.upm.miw.ecp2.patrones.Memento.ComandoDeshacer;
 import upm.jbb.IO;
 
 public class MainCalculadora {
@@ -9,7 +7,7 @@ public class MainCalculadora {
 	 private GestorComandos gestor;
 
 	    public MainCalculadora() {
-	        Calculadora calc = new CalculadoraMementable();
+	        Calculadora calc = new Calculadora();
 	        this.gestor = new GestorComandos();
 	        this.gestor.add(new ComandoSumar(calc));
 	        this.gestor.add(new ComandoRestar(calc));

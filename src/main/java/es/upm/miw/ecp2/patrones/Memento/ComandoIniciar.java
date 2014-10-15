@@ -4,8 +4,8 @@ import es.upm.miw.ecp2.patrones.Memento.CalculadoraMementable;
 
 public class ComandoIniciar extends Comando{
 
-	public ComandoIniciar(CalculadoraMementable calcm) {
-		this.calculadoram = calcm;
+	public ComandoIniciar(Calculadora calc) {
+		this.calculadora = calc;
 	}
 
 	@Override
@@ -15,7 +15,7 @@ public class ComandoIniciar extends Comando{
 
 	@Override
 	public void execute() {
-		this.calculadoram.iniciar();
+		this.calculadora.iniciar();
 		
 	}
 

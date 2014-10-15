@@ -5,8 +5,8 @@ import upm.jbb.IO;
 
 public class ComandoImprimir extends Comando{
 
-	public ComandoImprimir(CalculadoraMementable calcm) {
-		this.calculadoram = calcm;
+	public ComandoImprimir(Calculadora calcm) {
+		this.calculadora = calcm;
 	}
 	
 
@@ -17,7 +17,7 @@ public class ComandoImprimir extends Comando{
 
 	@Override
 	public void execute() {
-		IO.out.println(this.calculadoram.getTotal());
+		IO.out.println(this.calculadora.getTotal());
 		
 	}
 

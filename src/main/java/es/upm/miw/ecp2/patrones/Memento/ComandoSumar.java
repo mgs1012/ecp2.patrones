@@ -5,8 +5,8 @@ import upm.jbb.IO;
 
 public class ComandoSumar extends Comando {
 
-	public ComandoSumar(CalculadoraMementable calcm) {
-		this.calculadoram = calcm;
+	public ComandoSumar(Calculadora calc) {
+		this.calculadora = calc;
 	}
 
 	@Override
@@ -18,7 +18,7 @@ public class ComandoSumar extends Comando {
 	public void execute() {
 		int valor = IO.in.readInt();
 		;
-		this.calculadoram.sumar(valor);
+		this.calculadora.sumar(valor);
 	}
 
 }

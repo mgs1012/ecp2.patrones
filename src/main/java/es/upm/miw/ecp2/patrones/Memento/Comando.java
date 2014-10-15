@@ -5,8 +5,6 @@ import es.upm.miw.ecp2.patrones.Memento.MementoCalculadora;
 
 public abstract class Comando implements ComandoI {
 
-	protected CalculadoraMementable calculadoram;
+	protected Calculadora calculadora;
 	
-	protected GestorMementos<MementoCalculadora>  gm;
-
 }

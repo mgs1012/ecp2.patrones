@@ -1,8 +1,5 @@
 package es.upm.miw.ecp2.patrones.Calculadora;
 
-import es.upm.miw.ecp2.patrones.Calculadora.Calculadora;
-import es.upm.miw.ecp2.patrones.Calculadora.Comando;
-import es.upm.miw.ecp2.patrones.Calculadora.GestorMementos;
 
 public class ComandoDeshacer extends Comando {
 

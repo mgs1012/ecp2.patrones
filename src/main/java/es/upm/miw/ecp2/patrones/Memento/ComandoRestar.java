@@ -5,8 +5,8 @@ import upm.jbb.IO;
 
 public class ComandoRestar extends Comando {
 	
-	public ComandoRestar(CalculadoraMementable calcm) {
-		this.calculadoram = calcm;
+	public ComandoRestar(Calculadora calc) {
+		this.calculadora = calc;
 	}
 
 
@@ -18,7 +18,7 @@ public class ComandoRestar extends Comando {
 	@Override
 	public void execute() {
 		int valor = IO.in.readInt();
-		this.calculadoram.restar(valor );		
+		this.calculadora.restar(valor );		
 	}
 
 }

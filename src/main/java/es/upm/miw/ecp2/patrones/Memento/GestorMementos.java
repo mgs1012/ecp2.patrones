@@ -2,10 +2,12 @@ package es.upm.miw.ecp2.patrones.Memento;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class GestorMementos<T> {
 	
-	 private Map<String, T> lista = new HashMap<String, T>();
+	 private SortedMap<String, T> lista = new TreeMap<String, T>();
 
 	    public void addMemento(String key, T memento) {
 	        this.lista.put(this.lista.size() + ":" + key, memento);
