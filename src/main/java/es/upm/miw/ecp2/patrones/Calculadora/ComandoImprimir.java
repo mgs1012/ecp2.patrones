@@ -1,5 +1,6 @@
-package es.upm.miw.ecp2.patrones.calculadora;
+package es.upm.miw.ecp2.patrones.Calculadora;
 
+import es.upm.miw.ecp2.patrones.Memento.CalculadoraMementable;
 import upm.jbb.IO;
 
 public class ComandoImprimir extends Comando{

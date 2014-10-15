@@ -1,4 +1,4 @@
-package es.upm.miw.ecp2.patrones.calculadora;
+package es.upm.miw.ecp2.patrones.Calculadora;
 
 import java.util.HashMap;
 import java.util.Map;

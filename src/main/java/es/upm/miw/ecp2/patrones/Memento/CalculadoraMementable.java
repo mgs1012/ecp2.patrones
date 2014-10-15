@@ -1,4 +1,6 @@
-package es.upm.miw.ecp2.patrones.calculadora;
+package es.upm.miw.ecp2.patrones.Memento;
+
+import es.upm.miw.ecp2.patrones.Calculadora.Calculadora;
 
 public class CalculadoraMementable extends Calculadora implements MementableI<MementoCalculadora>{
 

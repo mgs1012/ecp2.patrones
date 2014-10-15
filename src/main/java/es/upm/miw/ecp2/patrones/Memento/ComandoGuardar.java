@@ -1,5 +1,7 @@
-package es.upm.miw.ecp2.patrones.calculadora;
+package es.upm.miw.ecp2.patrones.Memento;
 
+import es.upm.miw.ecp2.patrones.Calculadora.Comando;
+import es.upm.miw.ecp2.patrones.Calculadora.GestorMementos;
 import upm.jbb.IO;
 
 public class ComandoGuardar extends Comando {

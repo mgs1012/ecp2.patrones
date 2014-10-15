@@ -1,4 +1,4 @@
-package es.upm.miw.ecp2.patrones.calculadora;
+package es.upm.miw.ecp2.patrones.Memento;
 
 public interface MementableI<T> {
 
